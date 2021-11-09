@@ -1,0 +1,35 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+
+h1{
+  font-size: 40px !important;
+}
+
+body{
+  padding-top: 3.5rem;
+}
+
+.btn-primary{
+  background-color: transparent;
+  color: #FAF5DF;
+  border-color: transparent;
+
+}
+
+.btn-primary:hover{
+  background-color: transparent;
+  border-color: transparent;
+  color: #FAF5DF;
+  text-decoration: underline;
+}
+
+
+.jh_btn_long{
+  background-color:white;
+  color:black;
+  font-size: 10px;
+  margin: 10px 30px 10px 0px;
+}
+
+.j_but{
+  text-align: center;
+}
