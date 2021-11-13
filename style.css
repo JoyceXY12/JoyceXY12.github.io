@@ -10,7 +10,7 @@ body{
 
 .btn-primary{
   background-color: transparent;
-  color: #FAF5DF;
+  color: #FAE1DD;
   border-color: transparent;
 
 }
@@ -18,7 +18,7 @@ body{
 .btn-primary:hover{
   background-color: transparent;
   border-color: transparent;
-  color: #FAF5DF;
+  color: #FAE1DD;
   text-decoration: underline;
 }
 
