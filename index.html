@@ -1,79 +1,194 @@
 <!DOCTYPE html>
-<!-- saved from url=(0053)https://getbootstrap.com/docs/4.0/examples/jumbotron/ -->
-<html lang="en">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+<title>Home Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link id="css" rel="stylesheet" href="style.css">
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> --> 
+</head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/docs/4.0/assets/img/favicons/favicon.ico">
+<body>
 
-    <title>Joyce Huang - English</title>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="pad-left w3-bar-item w3-button">HOME</a>
+    <a href="schedule.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> SCHEDULE</a>
+    <a href="proj.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+    <button id="mode" class="w3-bar-item w3-button w3-hide-small" onclick="darkMode()">DARK MODE</button>
+  </div>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/jumbotron/">
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-brown w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+    <a href="schedule.html" class="w3-bar-item w3-button" onclick="toggleFunction()">SCHEDULE</a>
+    <a href="proj.html" class="w3-bar-item w3-button" onclick="toggleFunction()">PROJECTS</a>
+    <button id="mode" class="w3-bar-item w3-button w3-hide-small" onclick="darkMode()">DARK MODE</button>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle space">
+    <span id="title" class="move-left big center w3-center w3-padding-large w3-brown w3-wide w3-animate-opacity"> <span class="w3-hide-mmedium w3-hide-small">HELLO AND </span> WELCOME <span class="w3-hide-medium w3-hide-mmedium w3-hide-small">TO MY WEBSITE</span> </span>
+    <br>
+    <span id="symbol" class="move-right wingding center w3-center w3-padding-large w3-brown w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-mmedium w3-hide-small">Hello <span class="w3-hide-medium">A</span>nd</span> Welcome<span class="w3-hide-medium w3-hide-mmedium w3-hide-small"> To My Home</span> </span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <div>
+    <h2 class="animate2 w3-center"><b>ABOUT ME ^-^</b></h2>
+  </div>
+
+  <div class="w3-row w3-container w3-padding-64">
+      <table>
+        <tr>
+          <td class="pad" colspan="4">
+            <h3 class="w3-center"><em>My name, Joyce Huang, quite literally translates to "Lord Yellow."</em></h3>
+          </td>
+        </tr>
+        <tr>
+          <td class="pad" colspan="1">The name "Joyce" in fact has little to do with happiness, but everything to do with "lord," which is what it meant in Latin. 黄 (huāng) is a common Chinese last name referring to the colour yellow.</td>
+          <td class="pad" colspan="1">I am bilingual: I speak both Chinese and English, and I am studying French, Latin (hence the name explanation), and Attic Greek. While Greek and Roman mythology were what initially drew me into Classics, languages were what kept me there and made me determined to study it in university.</td>
+          <td class="pad" colspan="1">My personality type is INTJ and my Hogwarts house is Ravenclaw. And yes, I am an absolute nerd. Ever since I first picked up a twelve-book long series from my sister's bookshelve, I've been spellbound by the words and worlds authors spin, and dreamed of penning a fantastical world of mine's own for readers to find escape in. I love creative writing and joined both the school magazine (now a newspaper) and a literary journal outside of school. </td>
+          <td class="pad" colspan="1">In addition to natural languages, I've also had the fortune of exploring several programming languages, from Java to Javascript. That is why you are now able to happen across my personal website! Thank you for taking the time to get to know me, and I hope you enjoy your time here.</td>
+        </tr>      
+      </table> 
+    </div>
+
+  <div class="w3-row w3-padding-64">
+  <div>
+    <table>
+    <tr>
+        <td colspan="3"> 
+            <picture>
+                <source media="(min-width: 650px)" srcset="book2.jpg"> 
+                <img class="autosize" src="book.jpg"> 
+            </picture> 
+        </td>
+        <td colspan="1" class="pad-left">
+          <h4>My Favorite Books:</h4>
+          <ol id="a">
+            <li>All-Time Favorite: <br>
+              <ul class="b">
+                <li class="indent"><i>Six of Crows</i></li>
+              </ul>
+            </li>
+            <li>Childhood Favorites: <br>
+              <ul class="b">
+                <li class="indent"><i>The Riordanverse Books</i></li>
+                <li class="indent"><i>The Harry Potter Series</i></li>
+                <li class="indent"><i>The Thea Sisters</i></li>
+                <li class="indent"><i>Totto-Chan: The Little Girl at the Window</i></li>
+              </ul>
+            </li>
+            <li>Summer Reading Books I Recommend (if you're in YHS): <br></li>
+            <ul class="b">
+              <li class="indent"><i>Creative Writing 10: Life of Pi</i></li>
+              <li class="indent"><i>English 11/12: Interior Chinatown</i></li>
+              <li class="indent"><i>AP Lang (summer): In Cold Blood</i></li>
+              <li class="indent"><i>AP Lang (school-term): How The Garcia Girls Lost Their Accents</i></li>
+              <li class="indent"><i>AP Lit: A Room of One's Own</i></li>
+            </ul>
+            <li>Current Read: <br>
+              <ul class="b">
+                <li class="indent"><i>A Room of One's Own</i></li>
+              </ul>
+            </li>
+          </ol>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="w3-row w3-padding-64"></div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off">
+  <p>This website is sponsored by the <a class="v" href="https://github.com/York-House-School/gitting-ready-for-web-programming-JoyceH24" title="YHS GitHub repository" target="_blank">YHS GitHub repository</a> and <a class="v" href="https://yorkhouse.myschoolapp.com/app/student#assignmentdetail/16144034/27431665/0/academicclass--25527233--0--assignments">MyYHS.</a></p>
+  <a href="#home" class="w3-button w3-light-brown"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
  
-    <!-- Bootstrap core CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- Custom styles for this template -->
-    <link href="./style.css" rel="stylesheet">
-  </head>
-
-  <body style="background-color: #F0F1F4"> <!--#FAF5DF-->
-
-    <nav class="navbar navbar-expand-md fixed-top" style="background-color: #F8EDEB; color: black; font-family: Cursive"> <!--background-color: #F8EDE8-->
-      <a class="navbar-brand" style="color: black" href="./index.html"><strong>JH</strong></a>
-      <button style="padding-right: 40px" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span style="padding-right: 30px" class="navbar-toggler-icon">Options </span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav ml-auto">
-          <a class="nav-link" style="font-weight:100; color: black" href="./chinese.html">Chinese 中文简体</a>
-          <a style="font-weight:100; color: black" class="nav-link" href="./index.html">Home</a>
-        </ul>
-      </div>
-    </nav>
-
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron p-0" style="background-color: #F0F1F4">
-
-        <div class="classA"> <!--E7EBF3--> <!-- style="background-color: #F0F1F4"-->
-          <div style="border-style: inset; border-width: 5px; margin:50px 50px 170px 170px; padding-bottom:13px; padding-top:13px">
-            <h1 class="display-3" style="font-family: Cursive; background-image: linear-gradient(#F8EDEB, #F0F1F4)"> <center>Joyce Huang</center> </h1>
-          </div>
-          <br>
-         <!-- <p style="font-size: 18px; margin: 30px 20px 20px 0px"><center>Hello, I'm Joyce. Welcome to my personal website. </center></p>-->
-          <p style="font-size: 15px; margin: 10px 20px 20px 20px"><center>I currently live in Canada. I like to read, write, and draw.</center></p>
-          <p style="font-size: 15px; margin: 10px 20px 20px 20px"><center>I'm also learning how to code, so this website is created by myself using HTML and CSS.</center></p>
-          <p style="font-size: 15px; margin: 10px 20px 20px 20px"><center>Check out my projects below!</center></p>
-          <div class="j_but">
-            <a class="btn btn-info" style="background-image: linear-gradient(to bottom right, #F8EDEB, #FAE1DD); font-size: 18px; border-color: black; color: black; padding: 8px 18px 8px 18px; margin: 10px 0px 0px 0px; border-style: inset" href="./project.html" role="button">PROJECTS</a>
-          </div>
-        </div>
-
-    </main>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./Jumbotron Template for Bootstrap_files/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="./Jumbotron Template for Bootstrap_files/popper.min.js"></script>
-    <script src="./Jumbotron Template for Bootstrap_files/bootstrap.min.js"></script>
+<script>
+/*my own code for light and dark mode*/ 
+function darkMode(){
+  if(document.getElementById("css").getAttribute("href") == "style.css"){
+    document.getElementById("css").setAttribute("href", "dark.css"); 
+    document.getElementById("mode").innerHTML="LIGHT MODE"; 
+    document.getElementById("title").setAttribute("class", "move-left big center w3-center w3-padding-large w3-bbtea w3-wide w3-animate-opacity"); 
+    document.getElementById("symbol").setAttribute("class", "move-right wingding center w3-center w3-padding-large w3-bbtea w3-xlarge w3-wide w3-animate-opacity"); 
+  }else{
+    document.getElementById("css").setAttribute("href", "style.css"); 
+    document.getElementById("mode").innerHTML="DARK MODE"; 
+    document.getElementById("title").setAttribute("class", "move-left big center w3-center w3-padding-large w3-brown w3-wide w3-animate-opacity"); 
+    document.getElementById("symbol").setAttribute("class", "move-right wingding center w3-center w3-padding-large w3-brown w3-xlarge w3-wide w3-animate-opacity"); 
+  }
+}
 
 
-</body></html>
+
+
+/*from template*/ 
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && document.getElementById("css").getAttribute("href") == "style.css") {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-brown";
+    } else if ((document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) && document.getElementById("css").getAttribute("href") == "dark.css"){
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-bbtea";
+    } else if (document.getElementById("css").getAttribute("href") == "dark.css"){
+      navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-bbtea", "");
+    } else {
+      navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-brown", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
