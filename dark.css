@@ -1,8 +1,8 @@
 /*MY OWN CSS OR MODIFIED CSS FROM TEMPLATE*/ 
 body {
-    background-color: #E0C9A6;
+    background-color: #622F22;
     height: 100%;
-    color: #622F22;
+    color: #E0C9A6;  
     line-height: 1.8;
 }
 
@@ -44,7 +44,7 @@ ul.b {
 }
 
 ol {
-    font-size: 17px; 
+  font-size: 17px; 
 } 
 
 @media (max-width:770px) and (min-width:500px){.w3-hide-mmedium{display:none!important}}
@@ -55,12 +55,12 @@ img {
 }
 
 a:link {
-  color: #622F22; 
+  color: #E0C9A6; 
   text-decoration: none; 
 }
 
 a.v:visited {
-  color: #7e3624; 
+  color: #E0C9A6; 
   text-decoration: none; 
 }
 
@@ -70,23 +70,23 @@ a:hover {
 }
 
 .w3-button {
-  padding-left:3px!important; 
+  padding-left:4px!important; 
 }
 
 .w3-button:hover {
-  color:rgb(254, 243, 214)!important;
-  background-color:rgba(59, 11, 11, 0.956)!important;
+  color:rgba(59, 11, 11, 0.956)!important; 
+  background-color:rgb(254, 243, 214)!important;
   text-decoration: underline; 
 }
 
 .w3-brown,.w3-hover-black:hover{
-  color:rgb(255, 247, 225)!important;
-  background-color:#490f0f!important
+    color:#E0C9A6!important;
+    background-color:#490f0f!important; 
 }
 
 .w3-bbtea,.w3-hover-brown:hover{
-  color:#490f0f!important;
-  background-color:rgb(254, 243, 214)!important
+    color:#490f0f!important;
+    background-color:rgb(254, 243, 214)!important
 }
 
 .pad-left {
@@ -98,13 +98,13 @@ a:hover {
 }
 
 table {
-  height: 100%; 
-  width: 100%; 
-  position: static; 
+    height: 100%; 
+    width: 100%;
+    position: static;  
 }
 
 td {
-  padding: 5px; 
+    padding: 5px; 
 }
 
 .collapse {
@@ -113,17 +113,17 @@ td {
 }
 
 td.pad {
-  padding-left: 10px!important; 
+    padding-left: 10px!important; 
 }
 
 .border {
-  border: 1px solid;
+    border: 1px solid;
 }
 
 button {
-  position: fixed; 
-  top: 0px; 
-  right: 2px;
+    position: fixed; 
+    top: 0px; 
+    right: 2px; 
 }
 
 .pad {
@@ -196,6 +196,7 @@ button {
 
 
 
+
 /*CSS FROM TEMPLATE*/ 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -238,7 +239,6 @@ button {
     min-height: 400px;
   }
 }
-
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
